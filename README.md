@@ -39,6 +39,10 @@ Run the development server
 ```bash
 npm run dev
 ```
+## License
+
+This project is licensed under the GNU General Public License v3 - see the `LICENSE` file for details.
+
 ## Contact
 Mukilteo Robotics Email: [hello@mukilteorobotics.org](mailto:hello@mukilteorobotics.or)
 
