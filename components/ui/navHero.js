@@ -1,11 +1,11 @@
 'use client'
 import { motion } from "framer-motion"
-import { Fragment, useState } from 'react'
-import { Dialog, Popover, Transition } from '@headlessui/react'
+import { useState } from 'react'
+import { Dialog } from '@headlessui/react'
 import Link from 'next/link'
 import { dela_gothic_one } from 'app/page.js'
-import React, { useEffect } from 'react'
-import { Menu, X, ChevronDown } from 'lucide-react'
+import React from 'react'
+import { Menu, X } from 'lucide-react'
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -59,34 +59,6 @@ export default function NavHero() {
             </a>
           ))}
         </div>
-        {/* <Popover className="relative">
-            <Popover.Button className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-              Company
-              <ChevronDown className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-            </Popover.Button>
-
-            <Transition
-              as={Fragment}
-              enter="transition ease-out duration-200"
-              enterFrom="opacity-0 translate-y-1"
-              enterTo="opacity-100 translate-y-0"
-              leave="transition ease-in duration-150"
-              leaveFrom="opacity-100 translate-y-0"
-              leaveTo="opacity-0 translate-y-1"
-            >
-              <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-96 rounded-3xl bg-white p-4 shadow-lg ring-1 ring-gray-900/5">
-                {company.map((item) => (
-                  <div key={item.name} className="relative rounded-lg p-4 hover:bg-gray-50">
-                    <a href={item.href} className="block text-sm font-semibold leading-6 text-gray-900">
-                      {item.name}
-                      <span className="absolute inset-0" />
-                    </a>
-                    <p className="mt-1 text-sm leading-6 text-gray-600">{item.description}</p>
-                  </div>
-                ))}
-              </Popover.Panel>
-            </Transition>
-          </Popover> */}
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />

@@ -1,22 +1,16 @@
 'use client'
 import React from 'react'
 import { motion } from "framer-motion"
-import Link from 'next/link'
-import { Card } from '@/components/ui/card'
 import NavHero from '@/components/ui/navHero'
 import Nav from '@/components/ui/nav'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
-
-  
 
 export default function HeroSupport() {
     const FADE_DOWN_ANIMATION_VARIANTS = {
         hidden: { opacity: 0, y: -10 },
         show: { opacity: 1, y: 0, transition: { type: "spring", bounce: 0.3 }, duration: 0.1 },
     };
-
-
 
   return (
 <>
@@ -98,7 +92,7 @@ export default function HeroSupport() {
                         src="/about/about4.png"
                         height="264"
                         width="176"
-                        alt='VEX Robotics feild at a competition'
+                        alt='VEX Robotics field at a competition'
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg group-hover:grayscale-0 grayscale"
                       />
                       <motion.div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -150,7 +144,7 @@ export default function HeroSupport() {
                         src="/about/about9.png"
                         height="264"
                         width="176"
-                        alt='Vex Robotics Feild at a competition.'
+                        alt='Vex Robotics field at a competition.'
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg group-hover:grayscale-0 grayscale"
                       />
                       <motion.div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
@@ -282,7 +276,7 @@ export default function HeroSupport() {
                         src="/about/about9.png"
                         height="264"
                         width="176"
-                        alt='Vex Robotics Feild at a competition.'
+                        alt='Vex Robotics field at a competition.'
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg group-hover:grayscale-0 grayscale"
                       />
                       <motion.div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />

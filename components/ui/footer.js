@@ -1,17 +1,12 @@
 'use client'
 import React from 'react'
-
-// import dela_gothic_one from 'app/page.js'
 import { dela_gothic_one } from 'app/page.js'
-
-
-
 
 const navigation = {
 
   main: [
     { name: 'Home', href: '/' },
-    { name: 'Donate', href: '/support' },
+    { name: 'Donate', href: 'https://www.paypal.com/donate/?business=XYYW8DZAGBP2L&no_recurring=0&item_name=Your+donation+goes+to+support+Mukilteo+Robotics+enabling+students+to+learn+and+participate+in+competitive+robotics.&currency_code=USD' },
     { name: 'About', href: '/support' },
     { name: 'Press', href: '/press' },
     { name: 'Join', href: 'https://docs.google.com/forms/d/e/1FAIpQLSfBRmQLn1WHxjShKooDNp5kYxkMCM93KQS9Z8WRwn2L266ivA/viewform?usp=sf_link' },

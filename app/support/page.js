@@ -1,12 +1,8 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import { Card } from '@/components/ui/card'
-import Nav from '@/components/ui/nav'
-import  MainNav  from '@/components/ui/nav'
 import { Dela_Gothic_One } from 'next/font/google'
-import { Button } from '@/components/ui/button'
 import Footer from '@/components/ui/footer'
-import HeroSupport from '../heroSupport'
+import HeroSupport from '../heroSections/heroSupport'
 
 
 const dela_gothic_one = Dela_Gothic_One({ subsets: ['latin'], weight: ['400'] })
@@ -47,27 +43,7 @@ const testimonials = [
       //     imageUrl:
       //       '/sean.png',
       //   },
-      // },
-      // {
-      //   body: "It's exciting to teach and see younger students find the same love and passion I had during my competitive season!",
-      //   author: {
-      //     name: 'Scott Lee',
-      //     handle: 'UW College Mentor',
-      //     imageUrl:
-      //       '/scott.png',
-      //   },
-      // },
-      // {
-      //   body: "It's exciting to teach and see younger students find the same love and passion I had during my competitive season!",
-      //   author: {
-      //     name: 'Scott Lee',
-      //     handle: 'UW College Mentor',
-      //     imageUrl:
-      //       '/scott.png',
-      //   },
-      // },
-      
-      
+      // },     
   ]
 
 export default function Home() {
@@ -77,7 +53,6 @@ export default function Home() {
       <div className="color-bg h-full w-11/12 left-0 right-0 mx-auto absolute z-[0] blur-[64px] opacity-10 top-[900px]"></div>
 
       <HeroSupport/>
-
 
       <div className='flex flex-col items-left w-full mx-auto bg-neutral-200/30 backdrop-blur-sm mt-24 border-neutral-400/10 border justify-center h-full pt-16 z-[1] relative'>
         <div className='flex flex-col items-left max-w-[1300px] mx-auto justify-center '>
@@ -98,78 +73,9 @@ export default function Home() {
 
       <div className="color-bg h-full w-11/12 left-0 right-0 mx-auto absolute z-[0] blur-[64px] opacity-10 -mt-20"></div>
 
-{/* 
-      <div className="py-28 sm:py-32">
-      <div className="mx-auto max-w-5xl px-6 lg:px-8 relative z-[1]">
-        <h2 className="text-center text-lg font-medium leading-8 text-neutral-500 mb-4">
-          Supported by some of the world’s most innovative teams and people.             
-          <a href="#" className=" bg-clip-text font-semibold text-transparent bg-gradient-to-r from-purple-700 to-pink-600">
-              <span className="absolute inset-0" aria-hidden="true" /> Join them?
-            </a>
-        </h2>
-        
-        <div className="-mx-6 grid grid-cols-2 gap-0.5 overflow-hidden sm:mx-0 md:grid-cols-3">
-          <div className="bg-neutral-200/30  border-neutral-400/10 border backdrop-blur-sm p-8 sm:p-10 hover:bg-neutral-300/20">
-            <img
-              className="max-h-16 w-full object-contain"
-              src="/electroimpact.svg"
-              alt="Electro Impact"
-              width={158}
-              height={48}
-            />
-          </div>
-          <div className="bg-neutral-200/30  border-neutral-400/10 border backdrop-blur-sm p-6 sm:p-10 hover:bg-neutral-300/20">
-            <img
-              className="max-h-12 w-full object-contain"
-              src="DS.svg"
-              alt="Dassault Systèmes"
-              width={158}
-              height={48}
-            />
-          </div>
-          <div className="bg-neutral-200/30  border-neutral-400/10 border backdrop-blur-sm p-6 sm:p-10 hover:bg-neutral-300/20">
-            <img
-              className="max-h-12 w-full object-contain"
-              src="/cellula.webp"
-              alt="Cellula Robotics"
-              width={158}
-              height={48}
-            />
-          </div>
-          <div className="bg-neutral-200/30  border-neutral-400/10 border backdrop-blur-sm p-6 sm:p-10 hover:bg-neutral-300/20">
-            <img
-              className="max-h-16 w-full object-contain"
-              src="/crane.svg"
-              alt="Crane Aerospace & Electronics"
-              width={200}
-              height={90}
-            />
-          </div>
-          <div className="bg-neutral-200/30  border-neutral-400/10 border backdrop-blur-sm p-6 sm:p-10 hover:bg-neutral-300/20">
-            <img
-              className="max-h-14 w-full object-contain"
-              src="/transcarta.webp"
-              alt="Transcarta"
-              width={158}
-              height={48}
-            />
-          </div>
-          <div className="bg-neutral-200/30  border-neutral-400/10 border backdrop-blur-sm p-6 sm:p-10 hover:bg-neutral-300/20">
-            <img
-              className="max-h-11 w-full object-contain"
-              src="/fastest.webp"
-              alt="Fastest Labs"
-              width={158}
-              height={48}
-            />
-          </div>
-        </div>
-      </div>
-    </div> */}
+
 
     <div className="bg-neutral-200/30 backdrop-blur-sm mt-24 border-neutral-400/10 border py-24 sm:py-32">
-    {/* <div className=' absolute h-1/3 w-full bottom-0 p-0 mx-0 bg-gradient-to-b from-transparent via-neutral-200  to-neutral-200 z-10 ' /> */}
-
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-xl text-center">
             <h2 href="#" className="text-lg leading-8 tracking-tight bg-clip-text font-semibold text-transparent bg-gradient-to-r from-purple-700 to-pink-600">
@@ -179,9 +85,6 @@ export default function Home() {
             We have worked with some amazing students and mentors.
           </p>
         </div>
-
-
-
         <div className="mx-auto mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
           <div className="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3 flex flex-wrap justify-center">
             {testimonials.map((testimonial) => (

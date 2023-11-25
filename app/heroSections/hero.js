@@ -7,18 +7,11 @@ import NavHero from '@/components/ui/navHero'
 import { Button } from '@/components/ui/button'
 import Nav from '@/components/ui/nav'
 
-
-  
-
 export default function Hero() {
     const FADE_DOWN_ANIMATION_VARIANTS = {
         hidden: { opacity: 0, y: -10 },
         show: { opacity: 1, y: 0, transition: { type: "spring", bounce: 0.3 }, duration: 0.1 },
     };
-
-
-
-
   return (
     <>
     <motion.div
