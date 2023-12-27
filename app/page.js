@@ -3,6 +3,7 @@ import { Card } from '@/components/ui/card'
 import { Dela_Gothic_One } from 'next/font/google'
 import Footer from '@/components/ui/footer'
 import Hero from './heroSections/hero'
+import NewsLetter from '@/components/ui/newsletter'
 
 export const dela_gothic_one = Dela_Gothic_One({ subsets: ['latin'], weight: ['400'] })
 
@@ -189,6 +190,9 @@ export default function Home() {
           ))}
         </ul>
       </div>
+    </div>
+    <div className='flex flex-col mt-24 items-left w-full mx-auto bg-neutral-200/30 backdrop-blur-sm border-neutral-400/10 border justify-center h-full pt-16 z-[1] relative'>
+      <NewsLetter />
     </div>
 
     <div className="color-bg h-1/2 w-11/12 left-0 right-0 mx-auto absolute z-[0] blur-[64px] opacity-10 -mt-[412px]" />
