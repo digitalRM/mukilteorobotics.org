@@ -119,11 +119,11 @@ export default function Home() {
           </div>
           <div className="bg-neutral-200/30  border-neutral-400/10 border backdrop-blur-sm p-6 sm:p-10 hover:bg-neutral-300/20 min-h-[130px] flex items-center">
             <img
-              className="max-h-16 w-full object-contain"
-              src="/crane.svg"
-              alt="Crane Aerospace & Electronics"
-              width={200}
-              height={90}
+              className="max-h-10 w-full object-contain"
+              src="/analog.png"
+              alt="Analog Devices"
+              width={279}
+              height={79}
             />
           </div>
           <div className="bg-neutral-200/30  border-neutral-400/10 border backdrop-blur-sm p-6 sm:p-10 hover:bg-neutral-300/20 min-h-[130px] flex items-center">
