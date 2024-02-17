@@ -169,7 +169,7 @@ export default function Home() {
     <div className="color-bg h-full w-11/12 left-0 right-0 mx-auto absolute z-[0] blur-[64px] opacity-10 -mt-20"></div>
 
     <div className="bg-neutral-200/30 backdrop-blur-sm mt-24 border-neutral-400/10 border py-24 sm:py-32 z-[1] relative ">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8"> 
         <div className="mx-auto max-w-[590px] text-center ">
           <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">Our Board</h2>
           <p className="mt-6 text-lg max-w-[520px] leading-8 text-gray-500 mx-auto">
