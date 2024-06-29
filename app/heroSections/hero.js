@@ -6,6 +6,7 @@ import { Card } from '@/components/ui/card'
 import NavHero from '@/components/ui/navHero'
 import { Button } from '@/components/ui/button'
 import Nav from '@/components/ui/nav'
+import { ChevronRight } from 'lucide-react'
 
 export default function Hero() {
     const FADE_DOWN_ANIMATION_VARIANTS = {
@@ -33,6 +34,19 @@ export default function Hero() {
         <motion.div className=' flex flex-col items-left max-w-[1300px] min-h-[500px] max-h-[600px] mx-auto justify-center h-[50vh] w-full pt-64 mb-64 sm:pt-32 sm:mb-14 z-[1] relative'>
         <motion.div className='flex flex-col items-left justify-center'>
             <motion.div className="py-12 px-4 mx-auto max-w-screen-xl text-center lg:py-16 z-10 relative">
+            <motion.div variants={FADE_DOWN_ANIMATION_VARIANTS} className="flex">
+              <motion.div className="relative mx-auto mb-12 backdrop-blur-xl flex items-center gap-x-4 rounded-full px-4 py-1 text-sm leading-6 text-neutral-600 ring-1 ring-neutral-900/10 hover:ring-neutral-900/20">
+                <a href="/support" className=" bg-clip-text font-semibold text-transparent bg-gradient-to-r from-purple-800 to-pink-700">
+                    <span className="absolute inset-0" aria-hidden="true" /> Annual Report
+                </a>
+                <span className="h-4 w-px bg-neutral-900/10" aria-hidden="true" />
+                <motion.a href="/2023-2024-Report.pdf" className="flex items-center gap-x-1">
+                  <span className="absolute inset-0" aria-hidden="true" />
+                  We are proud to present our 2023-2024 Annual Report
+                  <ChevronRight className="-mr-2 h-5 w-5 text-gray-400" aria-hidden="true" />
+                </motion.a>
+              </motion.div>
+            </motion.div>
             <motion.h1 variants={FADE_DOWN_ANIMATION_VARIANTS} className="px-1 mb-4 text-4xl text-left sm:text-center font-bold tracking-tight sm:tracking-tighter sm:leading-none text-black md:text-5xl lg:text-6xl dark:text-white">
                 Sponsor-funded, volunteer-run,<br className=' hidden sm:block'/> and completely free for students.
             </motion.h1>
