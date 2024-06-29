@@ -11,6 +11,7 @@ const people = [
   {
     name: 'Pete Stiles',
     role: 'Coach', 
+    role: 'Coach', 
     imageUrl:
       '/pete.jpg',
     extraRole: '',
@@ -23,7 +24,7 @@ const people = [
     extraRole: '',
   },
   {
-    name: 'Sid Sydney',
+    name: 'Sid Shih',
     role: 'Vice President of the Board',
     imageUrl:
       '/sid.jpg',
@@ -34,33 +35,47 @@ const people = [
     role: 'Head of Parts Managment',
     imageUrl:
        '/minh.jpg',
+       '/minh.jpg',
     extraRole: '',
   },
   {
     name: 'Jay Lai',
     role: 'Head of Fundraising',
+    name: 'Jay Lai',
+    role: 'Head of Fundraising',
     imageUrl:
+    '/jay.jpg',
+    extraRole: '',
     '/jay.jpg',
     extraRole: '',
   },
   {
     name: 'Daniel Zhu',
     role: 'Head of Education',
+    name: 'Daniel Zhu',
+    role: 'Head of Education',
     imageUrl:
+    '/daniel.jpg',
     '/daniel.jpg',
     extraRole: '',
   },
   {
     name: 'Serena Lee',
     role: 'Head of Public Relations',
+    name: 'Serena Lee',
+    role: 'Head of Public Relations',
     imageUrl:
+    '/serena.jpg',
     '/serena.jpg',
     extraRole: '',
   },
   {
     name: 'JiYoon Seok',
     role: 'Head of Administration',
+    name: 'JiYoon Seok',
+    role: 'Head of Administration',
     imageUrl:
+    '/jiyoon.jpg',
     '/jiyoon.jpg',
     extraRole: '',
   },
@@ -184,7 +199,9 @@ export default function Home() {
 
     <div className="bg-neutral-200/30 backdrop-blur-sm mt-24 border-neutral-400/10 border py-24 sm:py-32 z-[1] relative ">
       <div className="mx-auto max-w-[1460px] px-6 lg:px-8"> 
+      <div className="mx-auto max-w-[1460px] px-6 lg:px-8"> 
         <div className="mx-auto max-w-[590px] text-center ">
+          <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">Our Executive Team</h2>
           <h2 className="text-3xl font-bold tracking-tight text-black sm:text-4xl">Our Executive Team</h2>
           <p className="mt-6 text-lg max-w-[520px] leading-8 text-gray-500 mx-auto">
             We're incredibly passionate about robotics and providing students with the opportunity to interact with STEM for free.
@@ -193,9 +210,11 @@ export default function Home() {
         <ul
           role="list"
           className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:px-24 lg:grid-cols-4 "
+          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:px-24 lg:grid-cols-4 "
         >
           {people.map((person) => (
             <li className='' key={person.name}>
+              <Image width={320} height={297} className="aspect-[13/13] grayscale-[90%] hover:grayscale-0 transition-all rounded-md object-cover object-top w-full" src={person.imageUrl} alt={"An Image of " + person.name} />
               <Image width={320} height={297} className="aspect-[13/13] grayscale-[90%] hover:grayscale-0 transition-all rounded-md object-cover object-top w-full" src={person.imageUrl} alt={"An Image of " + person.name} />
               <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-black text-center">{person.name}</h3>
               <p className="text-base leading-7 text-gray-600 text-center" >{person.role}</p>
