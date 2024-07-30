@@ -35,7 +35,6 @@ const people = [
     role: 'Head of Parts Managment',
     imageUrl:
        '/minh.jpg',
-       '/minh.jpg',
     extraRole: '',
   },
   {
@@ -46,7 +45,6 @@ const people = [
     imageUrl:
     '/jay.jpg',
     extraRole: '',
-    '/jay.jpg',
     extraRole: '',
   },
   {
@@ -55,7 +53,6 @@ const people = [
     name: 'Daniel Zhu',
     role: 'Head of Education',
     imageUrl:
-    '/daniel.jpg',
     '/daniel.jpg',
     extraRole: '',
   },
@@ -66,7 +63,6 @@ const people = [
     role: 'Head of Public Relations',
     imageUrl:
     '/serena.jpg',
-    '/serena.jpg',
     extraRole: '',
   },
   {
@@ -75,7 +71,6 @@ const people = [
     name: 'JiYoon Seok',
     role: 'Head of Administration',
     imageUrl:
-    '/jiyoon.jpg',
     '/jiyoon.jpg',
     extraRole: '',
   },
@@ -210,7 +205,6 @@ export default function Home() {
         <ul
           role="list"
           className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:px-24 lg:grid-cols-4 "
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:px-24 lg:grid-cols-4 "
         >
           {people.map((person) => (
             <li className='' key={person.name}>
@@ -222,6 +216,7 @@ export default function Home() {
             </li>
           ))}
         </ul>
+      </div>
       </div>
     </div>
     <div className='flex flex-col mt-24 items-left w-full mx-auto bg-neutral-200/30 backdrop-blur-sm border-neutral-400/10 border justify-center h-full pt-16 z-[1] relative'>
